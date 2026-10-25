@@ -1,0 +1,45 @@
+# Unity: cachés y archivos generados (solo raíz)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Bb]uild/
+/[Bb]uilds/
+/UserSettings/
+/MemoryCaptures/
+/Recordings/
+/ExportedObj/
+
+# IDE y soluciones generadas
+/.vs/
+/.vscode/
+/.idea/
+.gradle/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+
+# Sistema operativo
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Assets/, Packages/ y ProjectSettings/ se versionan con sus .meta.

@@ -1,0 +1,12 @@
+CUATRO PATAS - Créditos de recursos
+
+Modelos 3D
+- Furniture Kit, City Builder Starter Kit, 3D Platformer Starter Kit, City Kit (Suburban), Nature Kit
+  por Kenney (www.kenney.nl) - Licencia CC0 (dominio público)
+- Soldier (corredora) por Quaternius (quaternius.com) - Licencia CC0
+
+Fuente
+- Fredoka, The Fredoka Project Authors - SIL Open Font License 1.1 (ver Assets/UI/Fonts/OFL.txt)
+
+Sonidos y música
+- Unity Learn (Creative Core / Starter Assets)
