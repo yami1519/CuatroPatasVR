@@ -279,6 +279,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.13",
       "depth": 1,
@@ -314,6 +315,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> casa-vr
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
       "depth": 0,
