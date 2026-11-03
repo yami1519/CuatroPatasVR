@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EntrenamientoVR.unity
     guid: 0d38d8e85517642e9ba7d4537ed68c44
+  - enabled: 1
+    path: Assets/Scenes/casaVR.unity
+    guid: bc9cfbe3d068dbc4f82a9c531e08f641
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a552e6385e3d140e5aa401a4976ec791, type: 2}

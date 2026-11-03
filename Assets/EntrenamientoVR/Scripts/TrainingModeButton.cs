@@ -6,7 +6,7 @@ namespace CuatroPatasVR.Training
     {
         [SerializeField] private TrainingSession session;
         [SerializeField] private bool freePlay;
-        private MaterialPropertyBlock highlight;
+        [SerializeField] private Animator animator;
         public bool IsFreePlayButton => freePlay;
         public bool Select()
         {
@@ -16,9 +16,7 @@ namespace CuatroPatasVR.Training
         }
         public void SetFocused(bool focused)
         {
-            if (highlight == null) highlight = new MaterialPropertyBlock();
-            highlight.SetColor("_BaseColor", focused ? new Color(0.29f, 0.43f, 0.30f) : new Color(0.12f, 0.23f, 0.17f));
-            GetComponent<Renderer>().SetPropertyBlock(highlight);
+            if (animator != null) animator.SetBool("Focused", focused);
         }
         private void OnTriggerEnter(Collider other)
         {
