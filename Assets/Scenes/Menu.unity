@@ -1631,7 +1631,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: EntrenamientoVR
+          m_StringArgument: PuebloVR
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &529256782
@@ -2969,8 +2969,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: 3}
-  m_SizeDelta: {x: 480, y: 100}
+  m_AnchoredPosition: {x: 48, y: 3}
+  m_SizeDelta: {x: 365, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1205730760
 MonoBehaviour:
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entrenamiento VR
+  m_text: Tienda VR
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36f37bd68520047639546d73434d0680, type: 2}
   m_sharedMaterial: {fileID: 5530064272159843594, guid: 36f37bd68520047639546d73434d0680, type: 2}
@@ -3019,8 +3019,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3210,7 +3210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cuidar a mi gato
+  m_text: Cuidar gato
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 36f37bd68520047639546d73434d0680, type: 2}
   m_sharedMaterial: {fileID: 5530064272159843594, guid: 36f37bd68520047639546d73434d0680, type: 2}
@@ -4780,7 +4780,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: casaVR
+          m_StringArgument: PuebloVR
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1781702780
@@ -5914,7 +5914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>CUIDA A TU GATO</b>\nVisita su hogar y atiende sus necesidades.\n\n<b>ENTRENAMIENTO
+  m_text: "<b>CUIDA A TU GATO</b>\nVisita su hogar y atiende sus necesidades.\n\n<b>TIENDA
     VR</b>\nElige Pr\xE1ctica o Modo libre mirando una tarjeta y pulsando el gatillo.
     Golpea con la mano indicada, ag\xE1chate y esquiva.\n\nEn modo libre, mant\xE9n
     B o Y durante un segundo para terminar."
