@@ -88,10 +88,27 @@ namespace CuatroPatasVR.EditorTools
             {
                 // fila norte de la calle (z + 7), mirando al sur (hacia la calle)
                 var saltos = new List<Vector2>(saltosX);
-                if (Mathf.Abs(z - 16f) < 1f) saltos.Add(new Vector2(-12f, 14f)); // zona de la casa del jugador
+                if (Mathf.Abs(z - 16f) < 1f)
+                {
+                    // edificios nuevos del usuario colocados al norte de la calle principal
+                    saltos.Add(new Vector2(-48f, -28f));
+                    saltos.Add(new Vector2(12f, 28f));
+                    saltos.Add(new Vector2(48f, 64f));
+                    saltos.Add(new Vector2(78f, 94f));
+                }
+                if (Mathf.Abs(z + 16f) < 1f)
+                {
+                    // fila z=-9 queda frente a la casa: prohibido plantar ahi
+                    saltos.Add(new Vector2(-16f, 16f));
+                }
                 totalCasas += FilaCasas(root, z + 7f, 180f, saltos, rng);
                 // fila sur de la calle (z - 7.5), mirando al norte
                 saltos = new List<Vector2>(saltosX);
+                if (Mathf.Abs(z - 16f) < 1f)
+                {
+                    saltos.Add(new Vector2(-14f, 14f));                 // casa del jugador (z=-8..8)
+                    saltos.Add(new Vector2(17f, 29f));                  // casa rescatada
+                }
                 if (Mathf.Abs(z + 16f) < 1f)
                 {
                     saltos.Add(new Vector2(-12f, 14f));                 // patio/casa
@@ -135,6 +152,7 @@ namespace CuatroPatasVR.EditorTools
                     bool cercaCalleV = false;
                     foreach (var xv in CallesV) if (Mathf.Abs(x - xv) < 6f) { cercaCalleV = true; break; }
                     if (cercaCalleV) continue;
+                    if (Mathf.Abs(z + 16f) < 1f && x > -10f && x < 12f) continue; // frente de la casa del jugador
                     float lado = ((int)((x - XIni) / 18f) % 2 == 0) ? 4.6f : -4.6f;
                     string t = rng.Next(2) == 0 ? "tree-large" : "tree-small";
                     if (Modelo(root, KitSuburban + t + ".glb", new Vector3(x, 0f, z + lado), (float)rng.NextDouble() * 360f, t == "tree-large" ? 3.5f : 2.2f) != null)
@@ -142,13 +160,14 @@ namespace CuatroPatasVR.EditorTools
                 }
             }
 
-            // ---------- cerca del patio de la casa ----------
-            for (float x = -6f; x <= 10f; x += 2f)
-                Modelo(root, KitSuburban + "fence-low.glb", new Vector3(x, 0f, -8.2f), 0f, 0.6f);
-
-            // ---------- camino de piedra de la casa a la calle ----------
-            Modelo(root, KitSuburban + "path-stones-long.glb", new Vector3(0.5f, 0.01f, -4.5f), 90f, 0.5f);
-            Modelo(root, KitSuburban + "path-stones-long.glb", new Vector3(0.5f, 0.01f, -10.5f), 90f, 0.5f);
+            // ---------- camino de cemento de la casa a la calle ----------
+            // (los path-stones del kit medían 20x7m: parecian losas grises gigantes)
+            var camino = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            camino.name = "Camino de cemento";
+            camino.transform.SetParent(root.transform);
+            camino.transform.position = new Vector3(0.5f, 0.035f, -10.4f);
+            camino.transform.localScale = new Vector3(1.6f, 0.05f, 4.6f);
+            camino.GetComponent<Renderer>().sharedMaterial = matVereda;
 
             // ---------- grifo junto a la vereda ----------
             CrearGrifo(root, new Vector3(11f, 0f, -12.6f), matGrifo, matAgua);
@@ -278,7 +297,14 @@ namespace CuatroPatasVR.EditorTools
         private static void Negocio(GameObject root, string modelo, string nombre, float x, Color colorLetrero, float altura)
         {
             var go = Modelo(root, modelo, new Vector3(x, 0f, -22.5f), 0f, altura);
-            if (go != null) go.name = "Edificio " + nombre;
+            if (go != null)
+            {
+                go.name = "Edificio " + nombre;
+                // no invadir la calle: la cara norte no debe pasar de z=-18.6
+                var b = CalcularBounds(go);
+                if (b.max.z > -18.6f)
+                    go.transform.position += new Vector3(0f, 0f, -18.6f - b.max.z);
+            }
             Letrero(root, nombre, new Vector3(x, 6f, -19.4f), colorLetrero);
         }
 
