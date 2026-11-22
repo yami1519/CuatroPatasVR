@@ -30,17 +30,17 @@ namespace CuatroPatasVR.EditorTools
         };
 
         // Calles horizontales (eje X) y verticales (eje Z)
-        private static readonly float[] CallesH = { 16f, -16f, -48f, -80f, -112f, -144f };
-        private static readonly float[] CallesV = { -58f, -26f, 40f, 72f };
-        private const float XIni = -80f, XFin = 104f;
-        private const float ZIni = 28f, ZFin = -156f;
+        private static readonly float[] CallesH = { 16f, -16f, -48f, -80f, -112f, -144f, -176f, -208f, -240f };
+        private static readonly float[] CallesV = { -90f, -58f, -26f, 40f, 72f, 104f };
+        private const float XIni = -120f, XFin = 140f;
+        private const float ZIni = 28f, ZFin = -252f;
 
         [MenuItem("Cuatro Patas/Tienda/11 - Pueblo con modelos Kenney")]
         public static void Build()
         {
             EditorSceneManager.OpenScene(Escena);
 
-            foreach (var nombre in new[] { "Pueblo - calle y fachadas", "Pueblo Kenney" })
+            foreach (var nombre in new[] { "Pueblo - calle y fachadas", "Pueblo Kenney", "TestModelos", "TestPackCompleto" })
             {
                 var viejo = GameObject.Find(nombre);
                 if (viejo != null) Object.DestroyImmediate(viejo);
@@ -60,8 +60,8 @@ namespace CuatroPatasVR.EditorTools
             var pasto = GameObject.CreatePrimitive(PrimitiveType.Plane);
             pasto.name = "Pasto del pueblo";
             pasto.transform.SetParent(root.transform);
-            pasto.transform.position = new Vector3(12f, -0.02f, -64f);
-            pasto.transform.localScale = new Vector3(21f, 1f, 21f); // 210 x 210
+            pasto.transform.position = new Vector3((XIni + XFin) / 2f, -0.02f, (ZIni + ZFin) / 2f);
+            pasto.transform.localScale = new Vector3((XFin - XIni) / 10f + 4f, 1f, (ZIni - ZFin) / 10f + 4f);
             pasto.GetComponent<Renderer>().sharedMaterial = matPasto;
 
             // ---------- calles ----------
@@ -83,6 +83,16 @@ namespace CuatroPatasVR.EditorTools
             Negocio(root, KitModular + "building-sample-tower-a.glb", "POLLERIA", 60f, new Color(0.9f, 0.25f, 0.2f), 7f);
 
             // ---------- CASAS (colocacion por huella real, sin traslapes) ----------
+            // Solo Kenney: los packs CityGameReady/CityPack importan rotos de Sketchfab
+            // (edificios volteados o flotando). Variedad: 21 modelos + tintes de color.
+            var kenney = new List<GameObject>();
+            foreach (var c in Casas)
+            {
+                var p = AssetDatabase.LoadAssetAtPath<GameObject>(KitSuburban + c + ".glb");
+                if (p != null) kenney.Add(p);
+            }
+            Debug.Log("TIENDA_VR: modelos de casa: " + kenney.Count + " kenney");
+
             int totalCasas = 0;
             foreach (var z in CallesH)
             {
@@ -101,13 +111,13 @@ namespace CuatroPatasVR.EditorTools
                     // fila z=-9 queda frente a la casa: prohibido plantar ahi
                     saltos.Add(new Vector2(-16f, 16f));
                 }
-                totalCasas += FilaCasas(root, z + 7f, 180f, saltos, rng);
+                totalCasas += FilaCasas(root, z + 7f, 180f, saltos, rng, kenney);
                 // fila sur de la calle (z - 7.5), mirando al norte
                 saltos = new List<Vector2>(saltosX);
                 if (Mathf.Abs(z - 16f) < 1f)
                 {
                     saltos.Add(new Vector2(-14f, 14f));                 // casa del jugador (z=-8..8)
-                    saltos.Add(new Vector2(17f, 29f));                  // casa rescatada
+                    saltos.Add(new Vector2(17f, 29f));                  // casa vecina
                 }
                 if (Mathf.Abs(z + 16f) < 1f)
                 {
@@ -117,12 +127,12 @@ namespace CuatroPatasVR.EditorTools
                     saltos.Add(new Vector2(24f, 36f));                  // pasteleria
                     saltos.Add(new Vector2(54f, 66f));                  // polleria
                 }
-                totalCasas += FilaCasas(root, z - 7.5f, 0f, saltos, rng);
+                totalCasas += FilaCasas(root, z - 7.5f, 0f, saltos, rng, kenney);
             }
             foreach (var x in CallesV)
             {
-                totalCasas += ColumnaCasas(root, x - 7f, 90f, saltosZ, rng);
-                totalCasas += ColumnaCasas(root, x + 7f, -90f, saltosZ, rng);
+                totalCasas += ColumnaCasas(root, x - 7f, 90f, saltosZ, rng, kenney);
+                totalCasas += ColumnaCasas(root, x + 7f, -90f, saltosZ, rng, kenney);
             }
 
             // ---------- autos estacionados en la calle principal ----------
@@ -181,14 +191,16 @@ namespace CuatroPatasVR.EditorTools
         }
 
         // Fila de casas sobre el eje X midiendo la huella de cada modelo.
-        private static int FilaCasas(GameObject root, float z, float rotY, List<Vector2> saltos, System.Random rng)
+        private static int FilaCasas(GameObject root, float z, float rotY, List<Vector2> saltos, System.Random rng,
+                                     List<GameObject> kenney)
         {
             int n = 0;
             float cursor = XIni;
             while (cursor < XFin)
             {
-                var modelo = Casas[rng.Next(Casas.Length)];
-                var go = ModeloSinMover(root, KitSuburban + modelo + ".glb", rotY, 4.5f);
+                var prefab = kenney[rng.Next(kenney.Count)];
+                float altura = 4.2f + (float)rng.NextDouble() * 1.6f;
+                var go = ModeloSinMover(root, prefab, rotY, altura);
                 if (go == null) break;
                 var b = CalcularBoundsLocal(go);
                 float mitad = Mathf.Max(b.size.x, 4f) / 2f;
@@ -200,6 +212,8 @@ namespace CuatroPatasVR.EditorTools
                     continue;
                 }
                 go.transform.position = new Vector3(centro, 0f, z) - new Vector3(b.center.x, b.min.y, b.center.z);
+                TinteAleatorio(go, rng);
+                GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.BatchingStatic);
                 n++;
                 cursor = centro + mitad + 1.5f;
             }
@@ -207,14 +221,16 @@ namespace CuatroPatasVR.EditorTools
         }
 
         // Columna de casas sobre el eje Z (para calles verticales).
-        private static int ColumnaCasas(GameObject root, float x, float rotY, List<Vector2> saltos, System.Random rng)
+        private static int ColumnaCasas(GameObject root, float x, float rotY, List<Vector2> saltos, System.Random rng,
+                                        List<GameObject> kenney)
         {
             int n = 0;
             float cursor = ZIni;
             while (cursor > ZFin)
             {
-                var modelo = Casas[rng.Next(Casas.Length)];
-                var go = ModeloSinMover(root, KitSuburban + modelo + ".glb", rotY, 4.5f);
+                var prefab = kenney[rng.Next(kenney.Count)];
+                float altura = 4.2f + (float)rng.NextDouble() * 1.6f;
+                var go = ModeloSinMover(root, prefab, rotY, altura);
                 if (go == null) break;
                 var b = CalcularBoundsLocal(go);
                 float mitad = Mathf.Max(b.size.z, 4f) / 2f;
@@ -226,10 +242,55 @@ namespace CuatroPatasVR.EditorTools
                     continue;
                 }
                 go.transform.position = new Vector3(x, 0f, centro) - new Vector3(b.center.x, b.min.y, b.center.z);
+                TinteAleatorio(go, rng);
+                GameObjectUtility.SetStaticEditorFlags(go, StaticEditorFlags.BatchingStatic);
                 n++;
                 cursor = centro - mitad - 1.5f;
             }
             return n;
+        }
+
+        // Paleta de tintes sutiles para que no todas las casas se vean iguales.
+        private static readonly Color[] Tintes = {
+            new Color(1f, 1f, 1f),       // original
+            new Color(1f, 0.93f, 0.84f), // durazno
+            new Color(0.88f, 0.94f, 1f), // azul palido
+            new Color(1f, 0.87f, 0.8f),  // salmon
+            new Color(0.9f, 1f, 0.88f),  // verde palido
+            new Color(1f, 1f, 0.85f),    // amarillo crema
+            new Color(0.95f, 0.9f, 1f),  // lila
+            new Color(0.92f, 0.9f, 0.88f)// gris calido
+        };
+
+        // Aplica un tinte de la paleta a todos los materiales de la casa.
+        private static void TinteAleatorio(GameObject go, System.Random rng)
+        {
+            int ti = rng.Next(Tintes.Length);
+            if (ti == 0) return; // original, no gastar materiales
+            foreach (var r in go.GetComponentsInChildren<Renderer>())
+            {
+                var mats = r.sharedMaterials;
+                for (int i = 0; i < mats.Length; i++)
+                    mats[i] = MaterialConTinte(mats[i], ti);
+                r.sharedMaterials = mats;
+            }
+        }
+
+        private static Material MaterialConTinte(Material orig, int ti)
+        {
+            if (orig == null) return orig;
+            string carpeta = CarpetaMat + "/Tintes";
+            if (!AssetDatabase.IsValidFolder(carpeta))
+                AssetDatabase.CreateFolder(CarpetaMat, "Tintes");
+            string ruta = carpeta + "/" + orig.name.Replace(" ", "_") + "_t" + ti + ".mat";
+            var mat = AssetDatabase.LoadAssetAtPath<Material>(ruta);
+            if (mat == null)
+            {
+                mat = new Material(orig);
+                AssetDatabase.CreateAsset(mat, ruta);
+            }
+            mat.color = Tintes[ti];
+            return mat;
         }
 
         private static bool EnSalto(float v, List<Vector2> saltos)
@@ -317,6 +378,12 @@ namespace CuatroPatasVR.EditorTools
                 Debug.LogWarning("TIENDA_VR: no se encontro modelo " + ruta);
                 return null;
             }
+            return ModeloSinMover(root, prefab, rotY, alturaObjetivo);
+        }
+
+        // Instancia un prefab escalado a altura objetivo, sin colocarlo aun (posicion 0).
+        private static GameObject ModeloSinMover(GameObject root, GameObject prefab, float rotY, float alturaObjetivo)
+        {
             var go = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
             go.transform.SetParent(root.transform);
             go.transform.rotation = Quaternion.Euler(0f, rotY, 0f);
@@ -405,19 +472,19 @@ namespace CuatroPatasVR.EditorTools
                 cielo = new Material(shader);
                 AssetDatabase.CreateAsset(cielo, ruta);
             }
-            cielo.SetFloat("_SunSize", 0.04f);
+            cielo.SetFloat("_SunSize", 0.05f);
             cielo.SetFloat("_SunSizeConvergence", 5f);
-            cielo.SetFloat("_AtmosphereThickness", 0.85f);
-            cielo.SetColor("_SkyTint", new Color(0.55f, 0.7f, 0.95f));
-            cielo.SetColor("_GroundColor", new Color(0.75f, 0.75f, 0.7f));
-            cielo.SetFloat("_Exposure", 1.25f);
+            cielo.SetFloat("_AtmosphereThickness", 1.15f);
+            cielo.SetColor("_SkyTint", new Color(0.72f, 0.62f, 0.58f));
+            cielo.SetColor("_GroundColor", new Color(0.68f, 0.6f, 0.52f));
+            cielo.SetFloat("_Exposure", 1.15f);
             RenderSettings.skybox = cielo;
             RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Skybox;
             RenderSettings.fog = true;
-            RenderSettings.fogColor = new Color(0.75f, 0.83f, 0.92f);
+            RenderSettings.fogColor = new Color(0.85f, 0.78f, 0.7f);
             RenderSettings.fogMode = FogMode.Linear;
-            RenderSettings.fogStartDistance = 70f;
-            RenderSettings.fogEndDistance = 220f;
+            RenderSettings.fogStartDistance = 90f;
+            RenderSettings.fogEndDistance = 340f;
 
             var sol = GameObject.Find("Directional Light");
             if (sol != null)
@@ -425,8 +492,8 @@ namespace CuatroPatasVR.EditorTools
                 var l = sol.GetComponent<Light>();
                 if (l != null)
                 {
-                    l.color = new Color(1f, 0.96f, 0.86f);
-                    l.intensity = 1.15f;
+                    l.color = new Color(1f, 0.9f, 0.74f);
+                    l.intensity = 1.2f;
                 }
                 sol.transform.rotation = Quaternion.Euler(48f, -142f, 0f);
             }
