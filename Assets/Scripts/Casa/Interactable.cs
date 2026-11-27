@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum InteractionType { Alimentar, DarAgua, LimpiarArena, Acariciar, Tienda, SalirACorrer, Dormir, Puerta }
+public enum InteractionType { Alimentar, DarAgua, LimpiarArena, Acariciar, Tienda, SalirACorrer, Dormir, Puerta, Vehiculo }
 
 // Poner en cualquier objeto de la casa con el que el dueño pueda interactuar (plato, arenero, gato, puerta...).
 public class Interactable : MonoBehaviour

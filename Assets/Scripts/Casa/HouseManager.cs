@@ -188,6 +188,19 @@ public class HouseManager : MonoBehaviour
                 else
                     Debug.LogError($"Door interaction '{it.name}' is missing DoorToggle.", it);
                 break;
+
+            case InteractionType.Vehiculo:
+                if (D.role != PlayerRole.Caregiver)
+                {
+                    Say("La moto es para el cuidador.");
+                    break;
+                }
+
+                if (it.TryGetComponent(out MotoController motoController))
+                    motoController.ToggleMount();
+                else
+                    Debug.LogError($"Vehicle interaction '{it.name}' is missing MotoController.", it);
+                break;
         }
 
         GameManager.Get().Save();
