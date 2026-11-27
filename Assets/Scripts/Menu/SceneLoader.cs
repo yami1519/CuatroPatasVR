@@ -4,12 +4,13 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [Header("Nombres de Escenas")]
-    [SerializeField] private string casaSceneName = "casaVR";
+    [SerializeField] private string casaSceneName = "PuebloVR";
     [SerializeField] private string puebloSceneName = "PuebloVR";
     [SerializeField] private string tiendaSceneName = "TiendaVR";
     [SerializeField] private string menuSceneName = "Menu";
 
     [Header("Paneles del Menú (Opcional)")]
+    [SerializeField] private GameObject panelElegirGato;
     [SerializeField] private GameObject panelOpciones;
     [SerializeField] private GameObject panelCreditos;
 
@@ -17,8 +18,11 @@ public class SceneLoader : MonoBehaviour
     public void PlayAsCaregiver()
     {
         var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
-        gm.Save();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
+            gm.Save();
+        }
         SceneManager.LoadScene(casaSceneName);
     }
 
@@ -26,17 +30,23 @@ public class SceneLoader : MonoBehaviour
     public void PlayAsCat()
     {
         var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
-        gm.Save();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
+            gm.Save();
+        }
         SceneManager.LoadScene(puebloSceneName);
     }
 
-    // Por si luego quieres elegir gato específico (0, 1 o 2)
+    // Elegir gato específico (0 = Nina, 1 = Teddy, 2 = Milo)
     public void PlayAsCatIndex(int catIndex)
     {
         var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.CatPlayer, catIndex);
-        gm.Save();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.CatPlayer, catIndex);
+            gm.Save();
+        }
         SceneManager.LoadScene(puebloSceneName);
     }
 
@@ -50,6 +60,16 @@ public class SceneLoader : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(sceneName))
             SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenElegirGato()
+    {
+        if (panelElegirGato != null) panelElegirGato.SetActive(true);
+    }
+
+    public void CloseElegirGato()
+    {
+        if (panelElegirGato != null) panelElegirGato.SetActive(false);
     }
 
     public void OpenOpciones()
@@ -74,7 +94,9 @@ public class SceneLoader : MonoBehaviour
 
     public void QuitGame()
     {
-        GameManager.Get().Save();
+        var gm = GameManager.Get();
+        if (gm != null) gm.Save();
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
