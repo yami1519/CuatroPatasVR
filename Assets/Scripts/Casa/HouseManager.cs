@@ -48,7 +48,7 @@ public class HouseManager : MonoBehaviour
     public GameObject doorLockVisual;
 
     [Header("Escenas")]
-    public string runSceneName = "Correr";
+    public string runSceneName = "Menu";
     public string menuSceneName = "Menu";
 
     public bool IsUIOpen => D.IsGameOver ||

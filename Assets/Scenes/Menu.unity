@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7132f2f28309a4dcfa15c5076d70ebe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  casaSceneName: casaVR
+  casaSceneName: PuebloVR
   puebloSceneName: PuebloVR
   tiendaSceneName: TiendaVR
   menuSceneName: Menu

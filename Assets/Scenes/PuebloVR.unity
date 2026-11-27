@@ -94157,7 +94157,7 @@ MonoBehaviour:
   netVisual: {fileID: 651072887}
   catBedVisual: {fileID: 1406271455}
   doorLockVisual: {fileID: 1782655693}
-  runSceneName: Correr
+  runSceneName: Menu
   menuSceneName: Menu
 --- !u!114 &1214531833
 MonoBehaviour:

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [Header("Nombres de Escenas")]
-    [SerializeField] private string casaSceneName = "casaVR";
+    [SerializeField] private string casaSceneName = "PuebloVR";
     [SerializeField] private string puebloSceneName = "PuebloVR";
     [SerializeField] private string tiendaSceneName = "TiendaVR";
     [SerializeField] private string menuSceneName = "Menu";
