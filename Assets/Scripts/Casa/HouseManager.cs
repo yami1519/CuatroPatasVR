@@ -399,6 +399,15 @@ public class HouseManager : MonoBehaviour
     // Mensaje desde otros scripts (por ejemplo, "ya es tarde")
     public void Notify(string m) => Say(m);
 
+    public void FeedCat(float amount)
+    {
+        if (amount <= 0f) return;
+        D.hunger = Mathf.Min(100f, D.hunger + amount);
+        GameManager.Get().Save();
+        UpdateUI();
+        FX("comer");
+    }
+
     static void FX(string kind)
     {
         if (HouseFX.Instance) HouseFX.Instance.Feedback(kind);

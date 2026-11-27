@@ -56,6 +56,8 @@ namespace CuatroPatasVR.Comun
             }
         }
 
+        public bool IsPlayerControlled => IsThisCatPlayer;
+
         private void Awake()
         {
             cc = GetComponent<CharacterController>();
