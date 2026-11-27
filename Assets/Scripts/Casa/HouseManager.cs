@@ -181,6 +181,13 @@ public class HouseManager : MonoBehaviour
                 if (HouseFX.Instance) HouseFX.Instance.SleepWithFade(Sleep);
                 else Sleep();
                 break;
+
+            case InteractionType.Puerta:
+                if (it.TryGetComponent(out DoorToggle doorToggle))
+                    doorToggle.Toggle();
+                else
+                    Debug.LogError($"Door interaction '{it.name}' is missing DoorToggle.", it);
+                break;
         }
 
         GameManager.Get().Save();
