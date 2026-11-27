@@ -19772,7 +19772,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: CloseShop
         m_Mode: 0
@@ -27018,7 +27018,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -37852,7 +37852,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -70469,7 +70469,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: GoMenu
         m_Mode: 0
@@ -72692,7 +72692,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 0
@@ -86801,7 +86801,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -94009,6 +94009,115 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214509107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1214531830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214531831}
+  - component: {fileID: 1214531832}
+  - component: {fileID: 1214531833}
+  m_Layer: 0
+  m_Name: SistemasCasa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214531831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214531830}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214531832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214531830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d40605dcc5c4fc0b10e3a86dfe78f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseManager
+  hungerRate: 0.16
+  thirstRate: 0.2
+  cleanRate: 0.1
+  moodRate: 0.12
+  priceFood: 15
+  priceSand: 10
+  priceToy: 20
+  priceVet: 40
+  priceNet: 120
+  priceLock: 50
+  priceBed: 200
+  hungerFill: {fileID: 1644182697}
+  thirstFill: {fileID: 748190496}
+  cleanFill: {fileID: 1128604939}
+  moodFill: {fileID: 1696562260}
+  infoText: {fileID: 1452368724}
+  promptText: {fileID: 901837149}
+  messagePanel: {fileID: 1025194452}
+  messageText: {fileID: 2129833615}
+  shopPanel: {fileID: 1725299987}
+  shopInfoText: {fileID: 1724933310}
+  summaryPanel: {fileID: 1931541546}
+  summaryText: {fileID: 764394763}
+  gameOverPanel: {fileID: 504896823}
+  gameOverText: {fileID: 2137278976}
+  netVisual: {fileID: 651072887}
+  catBedVisual: {fileID: 1406271455}
+  doorLockVisual: {fileID: 1782655693}
+  runSceneName: Correr
+  menuSceneName: Menu
+--- !u!114 &1214531833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214531830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9309e9eb2bba1472f8ba08a70d13218c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseFX
+  sun: {fileID: 0}
+  clockText: {fileID: 1164975422}
+  dayDuration: 300
+  startHour: 7
+  endHour: 22
+  hoursAwayWhenRunning: 3
+  fade: {fileID: 1717903613}
+  music: {fileID: 8300000, guid: 3dbed772caee9f247a451b5d10c37d05, type: 3}
+  musicVolume: 0.25
+  eatClip: {fileID: 0}
+  drinkClip: {fileID: 0}
+  litterClip: {fileID: 0}
+  petClip: {fileID: 0}
+  buyClip: {fileID: 0}
+  sleepClip: {fileID: 0}
+  warningClip: {fileID: 0}
+  footsteps:
+  - {fileID: 8300000, guid: 7d3bb5c466e9e4236865fb0d6cbc12bc, type: 3}
+  - {fileID: 8300000, guid: 4e64b59791dee4ac5a94fd7bb7f418e6, type: 3}
+  - {fileID: 8300000, guid: 05d011b56fa6d4fb192877a50c232066, type: 3}
+  - {fileID: 8300000, guid: 3460bc845161a4ed689477db35507340, type: 3}
+  player: {fileID: 1233454887}
 --- !u!1 &1214889991
 GameObject:
   m_ObjectHideFlags: 0
@@ -94092,7 +94201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -95526,6 +95635,7 @@ GameObject:
   - component: {fileID: 1233454887}
   - component: {fileID: 1233454886}
   - component: {fileID: 1233454888}
+  - component: {fileID: 1233454889}
   m_Layer: 0
   m_Name: MODO PRUEBA PC (WASD + raton)
   m_TagString: Untagged
@@ -95711,6 +95821,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233454881}
   m_Enabled: 1
+--- !u!114 &1233454889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233454881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684b4ba1291a8454e8508e2c75ff1b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HouseInteractor
 --- !u!1 &1237201917
 GameObject:
   m_ObjectHideFlags: 0
@@ -100548,7 +100670,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -146065,7 +146187,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: CloseSummary
         m_Mode: 0
@@ -147537,7 +147659,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -156148,7 +156270,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1214531832}
         m_TargetAssemblyTypeName: HouseManager, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 5
@@ -166973,3 +167095,4 @@ SceneRoots:
   - {fileID: 1491637602}
   - {fileID: 2106390835}
   - {fileID: 827303646}
+  - {fileID: 1214531831}
