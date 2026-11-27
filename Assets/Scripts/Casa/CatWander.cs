@@ -23,7 +23,12 @@ public class CatWander : MonoBehaviour
 
     void Start()
     {
-        if (surface != null && surface.navMeshData == null) surface.BuildNavMesh();
+        // Si el jugador está controlando este gato, no inicies el paseo automático
+        if (GameManager.Get().data.role == PlayerRole.CatPlayer)
+        {
+            enabled = false;
+            return;
+        }
 
         agent = GetComponent<NavMeshAgent>();
         if (agent != null && NavMesh.SamplePosition(transform.position, out NavMeshHit hit, 3f, NavMesh.AllAreas))
@@ -62,6 +67,9 @@ public class CatWander : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Get().data.role == PlayerRole.CatPlayer)
+            return;
+
         var hm = HouseManager.Instance;
         bool ui = hm != null && hm.IsUIOpen;
         if (Ready) agent.isStopped = ui || pauseTimer > 0f;
