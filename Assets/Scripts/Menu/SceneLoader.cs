@@ -10,31 +10,44 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private string menuSceneName = "Menu";
 
     [Header("Paneles del Menú (Opcional)")]
+    [SerializeField] private GameObject panelElegirGato;
     [SerializeField] private GameObject panelOpciones;
     [SerializeField] private GameObject panelCreditos;
 
     // Botón: Jugar como Cuidador
     public void PlayAsCaregiver()
     {
-        LoadGame(PlayerRole.Caregiver, 0, casaSceneName);
+        var gm = GameManager.Get();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
+            gm.Save();
+        }
+        SceneManager.LoadScene(casaSceneName);
     }
 
     // Botón: Jugar como Gato (por defecto Gato 0)
     public void PlayAsCat()
     {
-        LoadGame(PlayerRole.CatPlayer, 0, puebloSceneName);
+        var gm = GameManager.Get();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
+            gm.Save();
+        }
+        SceneManager.LoadScene(puebloSceneName);
     }
 
-    // Por si luego quieres elegir gato específico (0, 1 o 2)
+    // Elegir gato específico (0 = Nina, 1 = Teddy, 2 = Milo)
     public void PlayAsCatIndex(int catIndex)
     {
-        LoadGame(PlayerRole.CatPlayer, catIndex, puebloSceneName);
-    }
-
-    private void LoadGame(PlayerRole role, int catIndex, string sceneName)
-    {
-        GameManager.Get().SetRoleAndCatForScene(role, catIndex, sceneName);
-        SceneManager.LoadScene(sceneName);
+        var gm = GameManager.Get();
+        if (gm != null)
+        {
+            gm.SetRoleAndCat(PlayerRole.CatPlayer, catIndex);
+            gm.Save();
+        }
+        SceneManager.LoadScene(puebloSceneName);
     }
 
     public void LoadMenu()
@@ -47,6 +60,16 @@ public class SceneLoader : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(sceneName))
             SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenElegirGato()
+    {
+        if (panelElegirGato != null) panelElegirGato.SetActive(true);
+    }
+
+    public void CloseElegirGato()
+    {
+        if (panelElegirGato != null) panelElegirGato.SetActive(false);
     }
 
     public void OpenOpciones()
@@ -71,7 +94,9 @@ public class SceneLoader : MonoBehaviour
 
     public void QuitGame()
     {
-        GameManager.Get().Save();
+        var gm = GameManager.Get();
+        if (gm != null) gm.Save();
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

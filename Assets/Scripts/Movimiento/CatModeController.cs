@@ -8,7 +8,7 @@ namespace CuatroPatasVR.Comun
     public class CatModeController : MonoBehaviour
     {
         [Header("Identidad y Spawn")]
-        [Tooltip("0 = Gato 1, 1 = Gato 2, 2 = Gato 3")]
+        [Tooltip("0 = Gato 1 (Nina), 1 = Gato 2 (Teddy), 2 = Gato 3 (Milo)")]
         [SerializeField] private int catIndex = 0;
         [SerializeField] private Transform playerSpawnPoint;
 
@@ -56,8 +56,6 @@ namespace CuatroPatasVR.Comun
             }
         }
 
-        public bool IsPlayerControlled => IsThisCatPlayer;
-
         private void Awake()
         {
             cc = GetComponent<CharacterController>();
@@ -83,13 +81,13 @@ namespace CuatroPatasVR.Comun
             var kb = Keyboard.current;
             if (kb != null && catIndex == 0)
             {
-                if (kb.digit1Key.wasPressedThisFrame)
+                if (kb.f1Key.wasPressedThisFrame)
                 {
                     var gm = GameManager.Get();
                     if (gm != null) gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
                 }
 
-                if (kb.digit2Key.wasPressedThisFrame)
+                if (kb.f2Key.wasPressedThisFrame)
                 {
                     var gm = GameManager.Get();
                     if (gm != null) gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
@@ -126,9 +124,13 @@ namespace CuatroPatasVR.Comun
 
         private void ApplyModeState(bool forceTeleport)
         {
-            wasPlayerActive = IsThisCatPlayer;
+            bool isPlayer = IsThisCatPlayer;
+            wasPlayerActive = isPlayer;
 
-            if (wasPlayerActive)
+            var gm = GameManager.Get();
+            bool anyCatIsPlayer = gm != null && gm.data != null && gm.data.role == PlayerRole.CatPlayer;
+
+            if (isPlayer)
             {
                 if (catWander != null) catWander.enabled = false;
                 if (navAgent != null)
@@ -169,12 +171,12 @@ namespace CuatroPatasVR.Comun
             }
             else
             {
+                // Apaga solo la cámara de ESTE gato no seleccionado
                 if (catEyeCamera != null)
                     catEyeCamera.enabled = false;
 
-                var gm = GameManager.Get();
-                bool catPlayerMode = gm != null && gm.data != null && gm.data.role == PlayerRole.CatPlayer;
-                if (!catPlayerMode && otherCamerasToDisable != null)
+                // Solo reactiva las cámaras del modo cuidador si NINGÚN gato está jugando como CatPlayer
+                if (!anyCatIsPlayer && otherCamerasToDisable != null)
                 {
                     foreach (var cam in otherCamerasToDisable)
                     {
@@ -192,8 +194,11 @@ namespace CuatroPatasVR.Comun
                 if (catWander != null && navAgent != null && navAgent.enabled)
                     catWander.enabled = true;
 
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                if (!anyCatIsPlayer)
+                {
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                }
             }
         }
 
