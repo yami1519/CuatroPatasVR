@@ -16,28 +16,25 @@ public class SceneLoader : MonoBehaviour
     // Botón: Jugar como Cuidador
     public void PlayAsCaregiver()
     {
-        var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
-        gm.Save();
-        SceneManager.LoadScene(casaSceneName);
+        LoadGame(PlayerRole.Caregiver, 0, casaSceneName);
     }
 
     // Botón: Jugar como Gato (por defecto Gato 0)
     public void PlayAsCat()
     {
-        var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
-        gm.Save();
-        SceneManager.LoadScene(puebloSceneName);
+        LoadGame(PlayerRole.CatPlayer, 0, puebloSceneName);
     }
 
     // Por si luego quieres elegir gato específico (0, 1 o 2)
     public void PlayAsCatIndex(int catIndex)
     {
-        var gm = GameManager.Get();
-        gm.SetRoleAndCat(PlayerRole.CatPlayer, catIndex);
-        gm.Save();
-        SceneManager.LoadScene(puebloSceneName);
+        LoadGame(PlayerRole.CatPlayer, catIndex, puebloSceneName);
+    }
+
+    private void LoadGame(PlayerRole role, int catIndex, string sceneName)
+    {
+        GameManager.Get().SetRoleAndCatForScene(role, catIndex, sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void LoadMenu()

@@ -83,13 +83,13 @@ namespace CuatroPatasVR.Comun
             var kb = Keyboard.current;
             if (kb != null && catIndex == 0)
             {
-                if (kb.f1Key.wasPressedThisFrame)
+                if (kb.digit1Key.wasPressedThisFrame)
                 {
                     var gm = GameManager.Get();
                     if (gm != null) gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
                 }
 
-                if (kb.f2Key.wasPressedThisFrame)
+                if (kb.digit2Key.wasPressedThisFrame)
                 {
                     var gm = GameManager.Get();
                     if (gm != null) gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
@@ -172,7 +172,9 @@ namespace CuatroPatasVR.Comun
                 if (catEyeCamera != null)
                     catEyeCamera.enabled = false;
 
-                if (otherCamerasToDisable != null)
+                var gm = GameManager.Get();
+                bool catPlayerMode = gm != null && gm.data != null && gm.data.role == PlayerRole.CatPlayer;
+                if (!catPlayerMode && otherCamerasToDisable != null)
                 {
                     foreach (var cam in otherCamerasToDisable)
                     {

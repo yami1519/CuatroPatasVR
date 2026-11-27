@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum PlayerRole
 {
@@ -61,6 +62,10 @@ public class GameManager : MonoBehaviour
     [NonSerialized] public bool cameFromRun;
 
     const string SaveKey = "CuatroPatas_Save";
+    private static bool hasPendingRole;
+    private static PlayerRole pendingRole;
+    private static int pendingCatIndex;
+    private static string pendingSceneName;
 
     public static GameManager Get()
     {
@@ -78,6 +83,8 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         Load();
+        SceneManager.sceneLoaded -= ApplyPendingRole;
+        SceneManager.sceneLoaded += ApplyPendingRole;
         AudioListener.volume = PlayerPrefs.GetFloat("CuatroPatas_Volumen", 0.8f);
     }
 
@@ -86,6 +93,27 @@ public class GameManager : MonoBehaviour
         data.role = newRole;
         data.selectedCatIndex = Mathf.Clamp(catIndex, 0, 2);
         Save();
+    }
+
+    public void SetRoleAndCatForScene(PlayerRole newRole, int catIndex, string sceneName)
+    {
+        SetRoleAndCat(newRole, catIndex);
+        pendingRole = data.role;
+        pendingCatIndex = data.selectedCatIndex;
+        pendingSceneName = sceneName;
+        hasPendingRole = true;
+    }
+
+    private static void ApplyPendingRole(Scene scene, LoadSceneMode mode)
+    {
+        if (!hasPendingRole || (scene.name != pendingSceneName && scene.path != pendingSceneName))
+            return;
+
+        PlayerRole role = pendingRole;
+        int catIndex = pendingCatIndex;
+        hasPendingRole = false;
+        pendingSceneName = null;
+        Get().SetRoleAndCat(role, catIndex);
     }
 
     public void AddCoins(int amount)
@@ -119,6 +147,13 @@ public class GameManager : MonoBehaviour
         data = new GameData();
         cameFromRun = false;
         Save();
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance != this) return;
+        SceneManager.sceneLoaded -= ApplyPendingRole;
+        Instance = null;
     }
 
     void OnApplicationQuit() => Save();
