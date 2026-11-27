@@ -8,6 +8,7 @@ TagManager:
   - Grass
   - Water
   - Cave
+  - LuzFarol
   layers:
   - Default
   - TransparentFX

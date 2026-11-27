@@ -1,28 +1,80 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Para botones de menú: en el OnClick() del botón, elige SceneLoader > LoadScene y escribe el nombre.
 public class SceneLoader : MonoBehaviour
 {
-    void Awake()
+    [Header("Nombres de Escenas")]
+    [SerializeField] private string casaSceneName = "casaVR";
+    [SerializeField] private string puebloSceneName = "PuebloVR";
+    [SerializeField] private string tiendaSceneName = "TiendaVR";
+    [SerializeField] private string menuSceneName = "Menu";
+
+    [Header("Paneles del Menú (Opcional)")]
+    [SerializeField] private GameObject panelOpciones;
+    [SerializeField] private GameObject panelCreditos;
+
+    // Botón: Jugar como Cuidador
+    public void PlayAsCaregiver()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        // En el navegador no se puede cerrar el juego: ocultamos el botón Salir.
-        var salir = GameObject.Find("BotonSalir");
-        if (salir) salir.SetActive(false);
-#endif
+        var gm = GameManager.Get();
+        gm.SetRoleAndCat(PlayerRole.Caregiver, 0);
+        gm.Save();
+        SceneManager.LoadScene(casaSceneName);
     }
 
-    public void LoadScene(string sceneName) => SceneManager.LoadScene(sceneName);
-
-    public void NewGame(string firstScene)
+    // Botón: Jugar como Gato (por defecto Gato 0)
+    public void PlayAsCat()
     {
-        GameManager.Get().ResetGame();
-        SceneManager.LoadScene(firstScene);
+        var gm = GameManager.Get();
+        gm.SetRoleAndCat(PlayerRole.CatPlayer, 0);
+        gm.Save();
+        SceneManager.LoadScene(puebloSceneName);
+    }
+
+    // Por si luego quieres elegir gato específico (0, 1 o 2)
+    public void PlayAsCatIndex(int catIndex)
+    {
+        var gm = GameManager.Get();
+        gm.SetRoleAndCat(PlayerRole.CatPlayer, catIndex);
+        gm.Save();
+        SceneManager.LoadScene(puebloSceneName);
+    }
+
+    public void LoadMenu()
+    {
+        if (!string.IsNullOrEmpty(menuSceneName))
+            SceneManager.LoadScene(menuSceneName);
+    }
+
+    public void LoadSceneByName(string sceneName)
+    {
+        if (!string.IsNullOrEmpty(sceneName))
+            SceneManager.LoadScene(sceneName);
+    }
+
+    public void OpenOpciones()
+    {
+        if (panelOpciones != null) panelOpciones.SetActive(true);
+    }
+
+    public void CloseOpciones()
+    {
+        if (panelOpciones != null) panelOpciones.SetActive(false);
+    }
+
+    public void OpenCreditos()
+    {
+        if (panelCreditos != null) panelCreditos.SetActive(true);
+    }
+
+    public void CloseCreditos()
+    {
+        if (panelCreditos != null) panelCreditos.SetActive(false);
     }
 
     public void QuitGame()
     {
+        GameManager.Get().Save();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
