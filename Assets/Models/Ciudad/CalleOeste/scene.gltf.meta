@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 842af41b17b8544a19cf4b2f87192f39
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets/Models/Ciudad/CalleOeste/scene.bin
+    assetPath: Assets/Models/Ciudad/CalleOeste/scene.bin
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_specularf0.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Groundcover_Sand_Smooth_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Groundcover_Sand_Smooth_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_specularf0.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Variable_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Variable_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_1_3_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_1_3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_baseColor.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Vertical_Stripe_Gray_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Vertical_Stripe_Gray_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Corrogated_Shiny_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Corrogated_Shiny_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_3_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Water_Sparkling_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Water_Sparkling_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_2_4_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_2_4_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rough_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rough_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rough_metallicRoughness.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rough_metallicRoughness.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_3_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_4_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_4_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_3_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_4_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_4_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_5_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_5_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Asphalt_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Asphalt_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Wood_Natural_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Wood_Natural_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Wood_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Wood_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Translucent_Glass_Sky_Reflection_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Translucent_Glass_Sky_Reflection_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_4_5_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_4_5_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_5_6_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_5_6_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_1_baseColor.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_1_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_2_baseColor.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_2_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_6_7_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_6_7_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_7_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_7_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_3_baseColor.png
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Fencing_Picket_Concave_3_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Variable_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Roofing_Shingles_Variable_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Roman_Hobbled_Blue_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Roman_Hobbled_Blue_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_8_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_8_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_9_8_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_9_8_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Sketchy_Lines_Wavy_Vertical_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Sketchy_Lines_Wavy_Vertical_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Wood_Natural_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Blinds_Wood_Natural_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_10_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_10_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_6_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_6_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Corrogated_Shiny_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Corrogated_Shiny_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Groundcover_Sand_Smooth_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Groundcover_Sand_Smooth_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_5_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_5_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Board_Cork_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_6_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_6_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Seamed_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Seamed_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_0_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood__Floor_2_0_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Vegetation_Grass_Artificial_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Vegetation_Grass_Artificial_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rusted_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Metal_Rusted_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_9_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Lumber_ButtJoined_9_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_4_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CalleOeste/textures/Wood_Cherry_Original_4_baseColor.jpeg
+  reportItems:
+  - type: 2
+    code: 20
+    messages:
+    - KHR_materials_specular

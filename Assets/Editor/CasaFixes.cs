@@ -207,14 +207,15 @@ public static class CasaFixes
         foreach (Transform h in pueblo.transform)
         {
             var n = h.name;
-            bool esEdificioExtra = (n.Contains("Building") || n.Contains("building")) && !n.StartsWith("building-type");
+            bool esEdificioExtra = (n.Contains("Building") || n.Contains("building"))
+                                   && !n.StartsWith("building-type") && !n.StartsWith("CityB_");
             if (esEdificioExtra) protegidas.Add(ExpandirXZ(CalcularBounds(h.gameObject), 0.5f));
         }
 
         var borrar = new List<GameObject>();
         foreach (Transform h in pueblo.transform)
         {
-            if (!h.name.StartsWith("building-type")) continue;
+            if (!h.name.StartsWith("building-type") && !h.name.StartsWith("CityB_")) continue;
             var b = CalcularBounds(h.gameObject);
             foreach (var p in protegidas)
                 if (b.Intersects(p)) { borrar.Add(h.gameObject); break; }
@@ -257,7 +258,7 @@ public static class CasaFixes
             new[]{"05_casa_vecina",      "26","3","-14",   "26","3","2"},
             new[]{"06_calle_principal",  "-40","2.5","-16","40","2","-16"},
             new[]{"07_aerea_casa",       "0.5","32","-4",  "0.5","0","-4.01"},
-            new[]{"08_aerea_pueblo",     "12","70","-30",  "12","0","-70"},
+            new[]{"08_aerea_pueblo",     "10","150","-50",  "10","0","-112"},
         };
         var ci = System.Globalization.CultureInfo.InvariantCulture;
         foreach (var v in views)
