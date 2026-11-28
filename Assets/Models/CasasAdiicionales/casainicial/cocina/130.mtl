@@ -1,0 +1,79 @@
+# File produced by AccuTrans 3D
+
+newmtl Butler_s_T
+  Ns 112.76
+  d 1.0
+  illum 2
+  Kd 0.34 0.13 0.04
+  Ka 0.6118 0.3922 0.2431
+  Ks 0.898 0.898 0.898
+  map_Kd E:\BOIS-~78.jpg
+
+newmtl Contempor1
+  Ns 35.29
+  d 1.0
+  illum 2
+  Kd 0.52 0.48 0.43
+  Ka 0.7412 0.7176 0.6824
+  Ks 0.898 0.898 0.898
+
+newmtl Contempor1_1
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.80 0.77 0.65
+  Ka 0.902 0.8902 0.8235
+  Ks 0.898 0.898 0.898
+  map_Kd E:\PARIS~22.jpg
+
+newmtl Contempor2
+  Ns 35.29
+  d 1.0
+  illum 2
+  Kd 0.52 0.48 0.43
+  Ka 0.7412 0.7176 0.6824
+  Ks 0.898 0.898 0.898
+
+newmtl Contempor2_1
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.80 0.77 0.65
+  Ka 0.902 0.8902 0.8235
+  Ks 0.898 0.898 0.898
+  map_Kd E:\PARIS~22.jpg
+
+newmtl Contempora
+  Ns 35.29
+  d 1.0
+  illum 2
+  Kd 0.52 0.48 0.43
+  Ka 0.7412 0.7176 0.6824
+  Ks 0.898 0.898 0.898
+
+newmtl Contempora_1
+  Ns 77.2
+  d 1.0
+  illum 2
+  Kd 0.80 0.77 0.65
+  Ka 0.902 0.8902 0.8235
+  Ks 0.898 0.898 0.898
+  map_Kd E:\PARIS~22.jpg
+
+newmtl Round_Rug
+  Ns 39.1
+  d 1.0
+  illum 2
+  Kd 0.05 0.10 0.09
+  Ka 0.2588 0.349 0.3373
+  Ks 0.898 0.898 0.898
+  map_Kd E:\LINEN1~1.jpg
+
+newmtl Round_Rug_1
+  Ns 47.99
+  d 1.0
+  illum 2
+  Kd 0.09 0.08 0.07
+  Ka 0.3333 0.3176 0.3059
+  Ks 0.898 0.898 0.898
+  map_Kd E:\LINEN3~1.jpg

@@ -43,3 +43,4 @@ Thumbs.db
 Desktop.ini
 
 # Assets/, Packages/ y ProjectSettings/ se versionan con sus .meta.
+_audit/
