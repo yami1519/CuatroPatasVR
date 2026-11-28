@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: 75354e7681b88455fb3cfb6d446ff9e8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets/Models/Ciudad/CityPack3/scene.bin
+    assetPath: Assets/Models/Ciudad/CityPack3/scene.bin
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/Merged_materials_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/Merged_materials_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_1_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_1_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_1_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_5_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_5_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_5_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_5_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_3_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_3_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_3_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_6_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_6_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_6_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_6_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_7_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_7_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_7_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_7_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_8_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_8_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_8_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_8_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_2_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_2_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_2_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_12_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_12_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_16_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_16_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_25_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_25_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_26_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_26_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_27_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_27_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_28_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_28_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_29_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_29_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_30_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_30_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_31_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_31_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_32_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_32_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_33_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_33_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_34_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_34_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_35_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_35_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_36_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_36_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_37_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_37_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_38_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_38_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_4_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_4_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_4_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_4_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_39_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_39_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_40_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_40_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_41_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_41_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_42_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_42_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_46_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_46_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_47_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_47_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_48_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_48_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_49_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_49_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_50_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_50_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_52_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_52_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_53_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_53_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_54_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_54_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_55_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_55_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_56_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_56_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_57_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_57_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_58_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_58_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_60_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_60_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_61_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_61_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_62_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_62_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_63_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_63_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_65_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_65_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_64_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_64_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_68_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_68_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_78_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_78_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_80_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_80_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_82_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_82_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_81_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_81_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_84_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_84_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_87_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_87_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_88_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_88_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_89_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_89_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_90_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_90_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_90_specularf0.png
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_90_specularf0.png
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_94_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_94_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_96_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_96_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_99_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_99_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_102_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_102_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_103_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_103_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_105_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_105_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_106_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_106_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_113_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_113_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_116_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_116_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_117_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_117_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_118_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_118_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_123_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_123_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_122_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_122_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_126_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_126_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_133_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_133_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_132_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_132_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_135_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_135_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_136_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_136_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_138_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_138_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_139_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_139_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_141_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_141_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_142_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_142_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_143_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_143_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_147_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_147_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_150_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_150_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_152_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_152_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_153_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_153_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_162_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_162_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_164_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_164_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_165_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_165_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_167_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_167_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_173_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_173_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_177_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_177_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_184_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_184_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_183_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_183_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_195_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_195_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_219_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_219_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_222_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_222_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_226_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_226_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_227_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_227_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_244_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_244_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_245_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_245_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Ciudad/CityPack3/textures/material_250_baseColor.jpeg
+    assetPath: Assets/Models/Ciudad/CityPack3/textures/material_250_baseColor.jpeg
+  reportItems:
+  - type: 2
+    code: 20
+    messages:
+    - KHR_materials_specular
