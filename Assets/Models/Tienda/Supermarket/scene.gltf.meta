@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: f93581879b6c1498186898266bcd9a50
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets/Models/Tienda/Supermarket/scene.bin
+    assetPath: Assets/Models/Tienda/Supermarket/scene.bin
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Merged_materials_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Merged_materials_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Low_E_Glass_4_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Low_E_Glass_4_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Metal_Panel_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Metal_Panel_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Material1_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Material1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Concrete_rough_02_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Concrete_rough_02_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/StandingSeam_Metal_Roof_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/StandingSeam_Metal_Roof_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Material3_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Material3_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_6_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_6_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Tile_small_ceramic_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Tile_small_ceramic_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_9_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_9_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Glass_Blue_Tint_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Glass_Blue_Tint_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1288152132_cf337aaaaa_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1288152132_cf337aaaaa_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1294981325_1fee77a00b_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1294981325_1fee77a00b_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1283349594_2401196b85_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1283349594_2401196b85_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273246126_c77303284f_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273246126_c77303284f_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1299560590_362c382d48_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1299560590_362c382d48_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273241442_09919a4b28_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273241442_09919a4b28_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1285898721_b29e9584b7_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1285898721_b29e9584b7_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1305036061_9f7f250218_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1305036061_9f7f250218_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1288846983_2570a0f0bc_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1288846983_2570a0f0bc_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273231716_abebdfc305_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273231716_abebdfc305_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273231930_b2890047c2_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273231930_b2890047c2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273231950_e0060720fe_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273231950_e0060720fe_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1283350239_51a06d320a_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1283350239_51a06d320a_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1283350284_30150adf0a_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1283350284_30150adf0a_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1284772188_10b15e59a2_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1284772188_10b15e59a2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1299560597_b8e5a0f925_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1299560597_b8e5a0f925_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273233637_b46c252836_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273233637_b46c252836_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1283350172_17817d4149_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1283350172_17817d4149_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1274930285_03b45ac01c_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1274930285_03b45ac01c_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273231946_359484b8d7_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273231946_359484b8d7_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1273231950_0efd8a3c66_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1273231950_0efd8a3c66_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/60x260_1283573259_1fdaec168a_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/60x260_1283573259_1fdaec168a_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Metal_Corrogated_Shiny_1_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Metal_Corrogated_Shiny_1_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Metal_Corrogated_Shiny_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Metal_Corrogated_Shiny_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Translucent_Glass_Block_Dark_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Translucent_Glass_Block_Dark_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3333160001028_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3333160001028_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_9501006000021_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_9501006000021_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3215352590056_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3215352590056_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3276535922101_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3276535922101_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560020962_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560020962_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560544918_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560544918_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710090105_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710090105_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560028579_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560028579_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710310210_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710310210_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560065130_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560065130_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710743445_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710743445_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710346936_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710346936_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710753468_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710753468_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710207824_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710207824_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710211388_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710211388_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254473047001_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254473047001_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710194148_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710194148_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560601895_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560601895_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3596710347001_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3596710347001_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3017800016862_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3017800016862_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560025424_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560025424_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3254560033740_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3254560033740_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Z0_3083680085304_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Z0_3083680085304_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Wood_Cherry_Original_2_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Wood_Cherry_Original_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/Wood_Cherry_Original_2_2_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/Wood_Cherry_Original_2_2_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_5_baseColor.jpeg
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_5_baseColor.jpeg
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_3_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_3_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_4_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_4_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_5_6_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_5_6_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_7_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_7_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_8_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_8_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_9_10_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_9_10_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_11_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_11_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_12_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_12_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_13_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_13_baseColor.png
+  - type: 1
+    originalUri: Assets/Models/Tienda/Supermarket/textures/material_14_baseColor.png
+    assetPath: Assets/Models/Tienda/Supermarket/textures/material_14_baseColor.png
+  reportItems: []

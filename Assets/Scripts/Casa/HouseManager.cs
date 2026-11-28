@@ -48,7 +48,7 @@ public class HouseManager : MonoBehaviour
     public GameObject doorLockVisual;
 
     [Header("Escenas")]
-    public string runSceneName = "Correr";
+    public string runSceneName = "Menu";
     public string menuSceneName = "Menu";
 
     public bool IsUIOpen => D.IsGameOver ||
@@ -180,6 +180,26 @@ public class HouseManager : MonoBehaviour
             case InteractionType.Dormir:
                 if (HouseFX.Instance) HouseFX.Instance.SleepWithFade(Sleep);
                 else Sleep();
+                break;
+
+            case InteractionType.Puerta:
+                if (it.TryGetComponent(out DoorToggle doorToggle))
+                    doorToggle.Toggle();
+                else
+                    Debug.LogError($"Door interaction '{it.name}' is missing DoorToggle.", it);
+                break;
+
+            case InteractionType.Vehiculo:
+                if (D.role != PlayerRole.Caregiver)
+                {
+                    Say("La moto es para el cuidador.");
+                    break;
+                }
+
+                if (it.TryGetComponent(out MotoController motoController))
+                    motoController.ToggleMount();
+                else
+                    Debug.LogError($"Vehicle interaction '{it.name}' is missing MotoController.", it);
                 break;
         }
 
@@ -398,6 +418,15 @@ public class HouseManager : MonoBehaviour
 
     // Mensaje desde otros scripts (por ejemplo, "ya es tarde")
     public void Notify(string m) => Say(m);
+
+    public void FeedCat(float amount)
+    {
+        if (amount <= 0f) return;
+        D.hunger = Mathf.Min(100f, D.hunger + amount);
+        GameManager.Get().Save();
+        UpdateUI();
+        FX("comer");
+    }
 
     static void FX(string kind)
     {

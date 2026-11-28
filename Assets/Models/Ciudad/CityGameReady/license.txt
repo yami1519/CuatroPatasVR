@@ -1,0 +1,11 @@
+Model Information:
+* title:	City Game ready free
+* source:	https://sketchfab.com/3d-models/city-game-ready-free-9095f8bcff1e4c9088ea98a306d5887d
+* author:	CG Lads (https://sketchfab.com/CGlads)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "City Game ready free" (https://sketchfab.com/3d-models/city-game-ready-free-9095f8bcff1e4c9088ea98a306d5887d) by CG Lads (https://sketchfab.com/CGlads) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
